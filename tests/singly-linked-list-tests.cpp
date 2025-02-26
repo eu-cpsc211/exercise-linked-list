@@ -127,13 +127,13 @@ TEST(LinkedLists, 7_Append)
     Node* head = CreateSinglyLinkedList(4);
 
     // Get last node
-    Node* ptr = head;
-    while (ptr->next != nullptr)
-        ptr = ptr->next;
+    Node* tail = head;
+    while (tail->next != nullptr)
+        tail = tail->next;
 
     // TODO
 
     // Verify list contents
     string str = PrintListToString(head);
-    ASSERT_EQ("100 200 300 400 500", str);
+    ASSERT_EQ("100 200 300 400 50", str);
 }
