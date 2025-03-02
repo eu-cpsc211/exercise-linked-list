@@ -137,3 +137,19 @@ TEST(LinkedLists, 7_Append)
     string str = PrintListToString(head);
     ASSERT_EQ("100 200 300 400 50", str);
 }
+
+/* --------------------------------------------------------
+Reverse a list
+-------------------------------------------------------- */
+
+TEST(LinkedLists, 8_Reverse)
+{
+    // Create a linked list
+    Node* head = CreateSinglyLinkedList(4);
+
+    // TODO
+
+    // Verify list contents
+    string str = PrintListToString(head);
+    ASSERT_EQ("400 300 200 100", str);
+}

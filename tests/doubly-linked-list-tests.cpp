@@ -144,3 +144,19 @@ TEST(DoublyLinkedLists, 7_Append)
     string str = PrintListToStringInBothDirections(head);
     ASSERT_EQ("100 200 300 400 50 400 300 200 100", str);
 }
+
+/* --------------------------------------------------------
+Reverse a list
+-------------------------------------------------------- */
+
+TEST(DoublyLinkedLists, 8_Reverse)
+{
+    // Create a linked list
+    DoubleNode* head = CreateDoublyLinkedList(4);
+
+    // TODO
+
+    // Verify list contents
+    string str = PrintListToStringInBothDirections(head);
+    ASSERT_EQ("400 300 200 100 200 300 400", str);
+}
